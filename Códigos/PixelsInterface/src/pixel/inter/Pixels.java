@@ -37,6 +37,10 @@ public class Pixels extends JFrame
 		this.setResizable(false);
 		this.setTitle("InterPixel");
 		
+		ImageIcon icon;
+		icon = new ImageIcon(getClass().getResource("/pixel/icon/pixelIcon.png"));
+		this.setIconImage(icon.getImage());
+		
 		label0 = new JLabel();
 		label0.setText("<html><div style='width:300;height:160;'></div></html>");
 		label0.setBounds(0, 0, 300, 160);
